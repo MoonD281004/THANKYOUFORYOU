@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan PKL</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <section id="intro" class="intro">
+            <h1>Terima Kasih! 🎉</h1>
+            <p>Kami dari tim sangat berterima kasih atas kerja keras dan dedikasi kalian selama PKL. Semoga pengalaman ini membawa banyak kenangan indah!</p>
+            <div class="students">
+                <h2>Qilla & Evant</h2>
+                <button class="btn-primary" onclick="showLetters('qilla')">Yuk Buka Surat dari Kami untuk Qilla</button>
+                <button class="btn-primary" onclick="showLetters('evant')">Yuk Buka Surat dari Kami untuk Evant</button>
+            </div>
+        </section>
+
+        <section id="letters-qilla" class="letters hidden">
+            <h2>Surat untuk Qilla 💌</h2>
+            <div class="letter-buttons">
+                <button class="btn-letter" onclick="showLetter('qilla-joan')">Joan</button>
+                <button class="btn-letter" onclick="showLetter('qilla-ulfa')">Ulfa</button>
+                <button class="btn-letter" onclick="showLetter('qilla-lya')">Lya</button>
+                <button class="btn-letter" onclick="showLetter('qilla-abbina')">Abbina</button>
+                <button class="btn-letter" onclick="showLetter('qilla-iga')">Iga</button>
+            </div>
+            <div id="letter-content-qilla" class="letter-content"></div>
+            <button class="btn-back" onclick="backToIntro()">Kembali</button>
+        </section>
+
+        <section id="letters-evant" class="letters hidden">
+            <h2>Surat untuk Evant 💌</h2>
+            <div class="letter-buttons">
+                <button class="btn-letter" onclick="showLetter('evant-joan')">Joan</button>
+                <button class="btn-letter" onclick="showLetter('evant-ulfa')">Ulfa</button>
+                <button class="btn-letter" onclick="showLetter('evant-lya')">Lya</button>
+                <button class="btn-letter" onclick="showLetter('evant-abbina')">Abbina</button>
+                <button class="btn-letter" onclick="showLetter('evant-iga')">Iga</button>
+            </div>
+            <div id="letter-content-evant" class="letter-content"></div>
+            <button class="btn-back" onclick="backToIntro()">Kembali</button>
+        </section>
+
+        <section id="photos" class="photos">
+            <h2>Recap 1 Tahun 📸</h2>
+            <div class="photo-gallery">
+                <div class="photo-item" onclick="showPhotoDesc('photo1')">
+                    <img src="/Image/IMG-20251206-WA0043.jpg" alt="Moment 1">
+                    <p>Moment 1 Lebaran 2025</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0042.jpg" alt="Moment 2">
+                    <p>Moment 2 Lebaran 2025</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/WhatsApp Image 2025-12-06 at 11.47.28_72e3fcef.jpg" alt="Moment 3">
+                    <p>Moment 3 Lebaran 2025</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0041.jpg" alt="Moment 4">
+                    <p>Moment 4 Lebaran 2025</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0044.jpg" alt="Moment 1">
+                    <p>Moment 1 Madyang Geden </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0045.jpg" alt="Moment 2">
+                    <p>Moment 2 Madyang Geden </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0046.jpg" alt="Moment 3">
+                    <p>Moment 3 Madyang Geden </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0047.jpg" alt="Moment 4">
+                    <p>Moment 4 Madyang Geden </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0048.jpg" alt="Moment 5">
+                    <p>Moment 5 Madyang Geden </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0049.jpg" alt="Moment 6">
+                    <p>Moment 6 Madyang Geden </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0061.jpg" alt="Moment 1">
+                    <p>Moment 1 Pantai Kodoks </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0062.jpg" alt="Moment 2">
+                    <p>Moment 2 Pantai Kodoks </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0063.jpg" alt="Moment 3">
+                    <p>Moment 3 Pantai Kodoks </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0050.jpg" alt="Moment 4">
+                    <p>Moment 4 Pantai Kodoks </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0051.jpg" alt="Moment 1">
+                    <p>Moment 1 Tubbing </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0052.jpg" alt="Moment 2">
+                    <p>Moment 2 Tubbing </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0054.jpg" alt="Moment 2">
+                    <p>Moment 3 Tubbing </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0053.jpg" alt="Moment 2">
+                    <p>Moment 1 Karoke </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0055.jpg" alt="Moment 2">
+                    <p>Moment 3 Karoke </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0056.jpg" alt="Moment 2">
+                    <p>Moment 4 Karoke </p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0057.jpg" alt="Moment 2">
+                    <p>Moment 5 Karoke</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/4-20251203-195041-fjmmcb8wsi6qavgtBh1OMdMq.jpeg" alt="Moment 2">
+                    <p>Moment 1 Bidadari DM</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/4-20251203-195041-fjmmcb8wsi6qavgtkiMtZiG4.jpeg" alt="Moment 2">
+                    <p>Moment 2 Bidadari DM</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/4-20251203-195041-fjmmcb8wsi6qavgtxrvssnWG.jpeg" alt="Moment 2">
+                    <p>Moment 3 Bidadari DM</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/4-20251203-195041-fjmmcb8wsi6qavgtY4jOo6bx.jpeg" alt="Moment 2">
+                    <p>Moment 4 Bidadari DM</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG_0021_20251203_195550_3600.jpeg" alt="Moment 2">
+                    <p>Moment 1 Bidadari DM</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG_0024_20251203_195617_3600.jpeg" alt="Moment 2">
+                    <p>Moment 2 Bidadari DM</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG_0028_20251203_195656_3600.jpeg" alt="Moment 2">
+                    <p>Moment 3 Bidadari DM</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG_0033_20251203_195742_3600.jpeg" alt="Moment 2">
+                    <p>Moment 4 Bidadari DM</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0028.jpg" alt="Moment 2">
+                    <p>Moment 1 Perpisahan</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0029.jpg" alt="Moment 2">
+                    <p>Moment 2 Perpisahan</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0030.jpg" alt="Moment 2">
+                    <p>Moment 3 Perpisahan</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0031.jpg" alt="Moment 2">
+                    <p>Moment 4 Perpisahan</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0032.jpg" alt="Moment 2">
+                    <p>Moment 5 Perpisahan</p>
+                </div>
+                <div class="photo-item" onclick="showPhotoDesc('photo2')">
+                    <img src="/Image/IMG-20251206-WA0033.jpg" alt="Moment 2">
+                    <p>Moment 6 Perpisahan</p>
+                </div>
+                <!-- Add more photo items as needed -->
+            </div>
+            <div id="photo-desc" class="photo-desc hidden"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
